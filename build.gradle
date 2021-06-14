@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.1.9.RELEASE'
+        springBootVersion = '2.2.2.RELEASE'
     }
 
     repositories {
@@ -28,6 +28,10 @@ repositories {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
+
+    annotationProcessor('org.projectlombok:lombok')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }

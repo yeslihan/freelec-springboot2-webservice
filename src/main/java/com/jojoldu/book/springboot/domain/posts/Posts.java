@@ -29,5 +29,4 @@ public class Posts {
         this.content = content;
         this.author = author;
     }
-
 }
